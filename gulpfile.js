@@ -130,6 +130,7 @@ function build() {
     ],
     {
       base: "app",
+      allowEmpty: true
     }
   ).pipe(dest("build"));
 }

@@ -1,38 +1,432 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="ru" class="no-js">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>hello world</title>
-    <script type="module">
-        document.documentElement.classList.remove('no-js');
-        document.documentElement.classList.add('js');
-    </script>
-    <meta name="description" content="Page Description"> <!-- TODO: update meta description -->
-    <meta property="og:title" content="Home - Page"> <!-- TODO: update og:title -->
-    <meta property="og:url" content="https://www.example.com/page"> <!-- TODO: update og:url -->
-    <meta property="og:description" content="OG Page Description"> <!-- TODO: update og:description -->
-    <meta property="og:image" content="/path/to/image"> <!-- TODO: og:image -->
-    <meta property="og:image:alt" content="OG Image Description"> <!-- TODO: update og:image:alt -->
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="large-image-twitter.jpg"> <!-- TODO: update twitter:cared -->
-    <link rel="canonical" href="https://www.example.com/page"> <!-- TODO: update canonical link -->
-    <link rel="icon" href="/favicon.ico">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="manifest" href="site.webmanifest"> <!-- TODO: update web app manifest file -->
-    <meta name="theme-color" content="#FF00FF"> <!-- TODO: update meta theme color -->
-    <link rel="stylesheet" href="/minify/css/style.min.css"> <!-- TODO: Update styles -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CodeSandbox</title>
+  <script type="module">
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+  <meta name="description" content="Page Description"> <!-- TODO: update meta description -->
+  <meta property="og:title" content="Home - Page"> <!-- TODO: update og:title -->
+  <meta property="og:url" content="https://www.example.com/page"> <!-- TODO: update og:url -->
+  <meta property="og:description" content="OG Page Description"> <!-- TODO: update og:description -->
+  <meta property="og:image" content="/path/to/image"> <!-- TODO: og:image -->
+  <meta property="og:image:alt" content="OG Image Description"> <!-- TODO: update og:image:alt -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="large-image-twitter.jpg"> <!-- TODO: update twitter:cared -->
+  <link rel="canonical" href="https://www.example.com/page"> <!-- TODO: update canonical link -->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest"> <!-- TODO: update web app manifest file -->
+  <meta name="theme-color" content="#FF00FF"> <!-- TODO: update meta theme color -->
+  <link rel="stylesheet" href="/minify/css/style.min.css"> <!-- TODO: Update styles -->
 </head>
 
 <body>
-    <header>header</header>
-<main>
-    test gulp build
+  <div class="header-bg-container wrapper-container">
+    <header class="header-container content-container">
+      <span class="logo">
+        <img src="./assets/images/dist/Frame.svg" alt="CodeSandbox" />
+      </span>
+      <nav class="nav-container">
+        <li class="nav-item">
+          <div class="nav-text">Product</div>
+          <i data-lucide="chevron-down" class="lucideIcon-xs"></i>
+        </li>
+        <li class="nav-item">
+          <div class="nav-text">Explore</div>
+          <i data-lucide="chevron-down" class="lucideIcon-xs"></i>
+        </li>
+        <li class="nav-item">
+          <div class="nav-text">Resources</div>
+          <i data-lucide="chevron-down" class="lucideIcon-xs"></i>
+        </li>
+        <li class="nav-item">
+          <div class="nav-text">Support</div>
+          <i data-lucide="chevron-down" class="lucideIcon-xs"></i>
+        </li>
+        <li class="nav-item">
+          <div class="nav-text">Pricing</div>
+          <span class="notif-item">1</span>
+        </li>
+        <li class="nav-item">
+          <div class="nav-text">Jobs</div>
+        </li>
+        <li class="nav-item">
+          <div class="nav-text">Sign In</div>
+        </li>
+        <button class="primary-button">Create Sandbox</button>
+      </nav>
+    </header>
+  </div>
+<main class="main-container wrapper-container">
+  <section class="content-container">
+    <picture>
+      <source srcset="/assets/images/dist/first-section.avif" type="image/avif">
+      <source srcset="/assets/images/dist/first-section.webp" type="image/webp">
+      <img src="/assets/images/dist/first-section.png" alt="First Section">
+    </picture>
+  </section>
+  <section class="second-container content-container">
+    <span class="title-2">CodeSandbox</span>
+    <h2 class="title-1">Where teams build faster, together.</h2>
+    <h4 class="description">Create, share, get, feedback with collaborative sandboxes for rapid web development</h4>
+    <button class="primary-button">
+      < /> Start coding for free
+    </button>
+  </section>
+  <section class="third-container content-container">
+    <nav class="nav-tabs">
+      <span class="active-placeholder"></span>
+      <li class="nav-item active" id="noSetup">No setup</li>
+      <li class="nav-item" id="superfast">Superfast</li>
+      <li class="nav-item" id="multiplayer">Multiplayer</li>
+      <li class="nav-item" id="updatesLive">Updates live</li>
+      <li class="nav-item" id="shared">Shared</li>
+    </nav>
+    <div class="tabs-container">
+      <div class="tab-item active" data-id="noSetup">
+        A sandbox needs no setup - use a template to kickstart new projects, or start from a GitHub repo and begin
+        coding in seconds.
+      </div>
+      <div class="tab-item" data-id="superfast">
+        Superfast
+      </div>
+      <div class="tab-item" data-id="multiplayer">
+        Multiplayer
+      </div>
+      <div class="tab-item" data-id="updatesLive">
+        Updates live
+      </div>
+      <div class="tab-item" data-id="shared">
+        Shared
+      </div>
+    </div>
+    <picture>
+      <source srcset="/assets/images/dist/IMAGE.avif" type="image/avif">
+      <source srcset="/assets/images/dist/IMAGE.webp" type="image/webp">
+      <img class="preview-prictures-1 preview-prictures" src="/assets/images/dist/IMAGE.png"
+        alt="preview CodeSandbox workspace">
+    </picture>
+    <picture>
+      <source src="/assets/images/dist/preview-devices.avif" type="image/avif">
+      <source src="/assets/images/dist/preview-devices.webp" type="image/webp">
+      <img class="preview-prictures-2 preview-prictures" src="/assets/images/dist/preview-devices.png"
+        alt="preview CodeSandbox on different devices">
+    </picture>
+  </section>
+  <section class="four-container content-container">
+    <span class="title-2">CodeSandbox for iOS</span>
+    <h2 class="title-1">Anywhere, anytime.</h2>
+    <h4 class="description">Expirience the future of web development and build with the first cloud IDE for iOS.</h4>
+    <button class="secondary-button">
+      Learn more
+    </button>
+  </section>
+  <section class="five-container content-container">
+    <picture>
+      <source srcset="/assets/images/dist/five-section.avif" type="image/avif">
+      <source srcset="/assets/images/dist/five-section.webp" type="image/webp">
+      <img src="/assets/images/dist/five-section.png" style="max-height: 500px;" alt="">
+    </picture>
+
+    <picture>
+      <source srcset="/assets/images/dist/avatar-1.avif" type="image/avif">
+      <source srcset="/assets/images/dist/avatar-1.webp" type="image/webp">
+      <img class="avatar-1" src="/assets/images/dist/avatar-1.png" alt="">
+    </picture>
+    <picture>
+      <source srcset="/assets/images/dist/avatar-2.avif" type="image/avif">
+      <source srcset="/assets/images/dist/avatar-2.webp" type="image/webp">
+      <img class="avatar-2" src="/assets/images/dist/avatar-2.png" alt="">
+    </picture>
+    <picture>
+      <source srcset="/assets/images/dist/avatar-3.avif" type="image/avif">
+      <source srcset="/assets/images/dist/avatar-3.webp" type="image/webp">
+      <img class="avatar-3" src="/assets/images/dist/avatar-3.png" alt="">
+    </picture>
+    <picture>
+      <source srcset="/assets/images/dist/avatar-4.avif" type="image/avif">
+      <source srcset="/assets/images/dist/avatar-4.webp" type="image/webp">
+      <img class="avatar-4" src="/assets/images/dist/avatar-4.png" alt="">
+    </picture>
+    <picture>
+      <source srcset="/assets/images/dist/avatar-5.avif" type="image/avif">
+      <source srcset="/assets/images/dist/avatar-5.webp" type="image/webp">
+      <img class="avatar-5" src="/assets/images/dist/avatar-5.png" alt="">
+    </picture>
+    <picture>
+      <source srcset="/assets/images/dist/avatar-6.avif" type="image/avif">
+      <source srcset="/assets/images/dist/avatar-6.webp" type="image/webp">
+      <img class="avatar-6" src="/assets/images/dist/avatar-6.png" alt="">
+    </picture>
+    <h2 class="title-1">Code collaboration made easy.</h2>
+    <h4 class="description">A link is all you need to hop into a sandbox and keep development work flowing.</h4>
+    <div class="advantage-container">
+      <div class="advantage-item">
+        <picture>
+          <source srcset="/assets/images/dist/advantage-1.avif" type="image/avif">
+          <source srcset="/assets/images/dist/advantage-2.webp" type="image/webp">
+          <img src="/assets/images/dist/advantage-1.png" alt="">
+        </picture>
+        <h4 class="advantage-title">Rapid prototyping</h4>
+        <p class="advantage-text">Quickly create real, working prototypes. Test ideas earlier and iterate more</p>
+      </div>
+      <div class="advantage-item">
+        <picture>
+          <source srcset="/assets/images/dist/advantage-2.avif" type="image/avif">
+          <source srcset="/assets/images/dist/advantage-2.webp" type="image/webp">
+          <img src="/assets/images/dist/advantage-2.png" alt="">
+        </picture>
+        <h4 class="advantage-title">Knowledge sharing</h4>
+        <p class="advantage-text">Use code, apps, and templates collectively. Learn from exch other and bake-in best
+          practice.</p>
+      </div>
+      <div class="advantage-item">
+        <picture>
+          <source srcset="/assets/images/dist/advantage-3.avif" type="image/avif">
+          <source srcset="/assets/images/dist/advantage-3.webp" type="image/webp">
+          <img src="/assets/images/dist/advantage-3.png" alt="">
+        </picture>
+        <h4 class="advantage-title">Better feedback</h4>
+        <p class="advantage-text">Give and get feedback, on code or visuals, right in the editor. Take action and move
+          forward faster.</p>
+
+      </div>
+    </div>
+  </section>
+  <section class="sixth-container">
+    <picture>
+      <source srcset="/assets/images/dist/bg-js-experience.avif" type="image/avif">
+      <source srcset="/assets/images/dist/bg-js-experience.avif" type="image/webp">
+      <img src="/assets/images/dist/bg-js-experience.png" class="bg-js-image" alt="">
+    </picture>
+    <div class="content-container">
+      <h2 class="title-1">The best JavaScript dev experience.</h2>
+      <div class="advantage-container">
+        <div class="advantage-item">
+          <picture>
+            <source srcset="/assets/images/dist/npm-img.avif" type="image/avif">
+            <source srcset="/assets/images/dist/npm-img.webp" type="image/webp">
+            <img src="/assets/images/dist/npm-img.png" alt="">
+          </picture>
+          <h4 class="advantage-title">Supercharged with npm</h4>
+          <p class="advantage-text">Use private packages, or any of the 1M+ public ones, to build powerful apps quickly.
+          </p>
+        </div>
+        <div class="advantage-item">
+          <picture>
+            <source srcset="/assets/images/dist/optimize.avif" type="image/avif">
+            <source srcset="/assets/images/dist/optimize.webp" type="image/webp">
+            <img src="/assets/images/dist/optimize.png" alt="">
+          </picture>
+          <h4 class="advantage-title">Optimized for frameworks</h4>
+          <p class="advantage-text">Custom environments built specifically for React, Vue, Angular, and many more.</p>
+        </div>
+        <div class="advantage-item">
+          <picture>
+            <source srcset="/assets/images/dist/github.avif" type="image/avif">
+            <source srcset="/assets/images/dist/github.webp" type="image/webp">
+            <img src="/assets/images/dist/github.png" alt="">
+          </picture>
+          <h4 class="advantage-title">Integrated with GitHub</h4>
+          <p class="advantage-text">Import and run repos direct from GitHub. Or export your sandbox to a repo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="seventh-container content-container">
+    <h2 class="title-1">What are others saying?</h2>
+    <div class="feedback-container">
+      <div class="feedback-item">
+        <q class="feedback-text">It's dramatically improved my experience of sharing ideas</q>
+        <div class="feedback-img-container">
+          <picture>
+            <source srcset="/assets/images/dist/feedback-avatar.avif" type="image/avif">
+            <source srcset="/assets/images/dist/feedback-avatar.webp" type="image/webp">
+            <img src="/assets/images/dist/feedback-avatar.png" alt="">
+          </picture>
+          <picture>
+            <source srcset="/assets/images/dist/react.avif" type="image/avif">
+            <source srcset="/assets/images/dist/react.webp" type="image/webp">
+            <img src="/assets/images/dist/react.png" alt="">
+          </picture>
+        </div>
+        <span class="feedback-text">Brian Vaughn</span>
+        <p class="feedback-description">Software Engineer, React Core Team
+        </p>
+      </div>
+      <div class="feedback-item">
+        <q class="feedback-text">CodeSandbox continues to amaze me every day</q>
+        <div class="feedback-img-container">
+          <picture>
+            <source srcset="/assets/images/dist/feedback-avatar-2.avif" type="image/avif">
+            <source srcset="/assets/images/dist/feedback-avatar-2.webp" type="image/webp">
+            <img src="/assets/images/dist/feedback-avatar-2.png" alt="">
+          </picture>
+          <picture>
+            <source srcset="/assets/images/dist/apollo.avif" type="image/avif">
+            <source srcset="/assets/images/dist/apollo.webp" type="image/webp">
+            <img src="/assets/images/dist/apollo.png" alt="">
+          </picture>
+        </div>
+        <h4 class="feedback-text">Peggy Rayzis</h4>
+        <p class="feedback-description">Engineering Manager, Apollo GraphQL</p>
+      </div>
+      <div class="feedback-item">
+        <q class="feedback-text">It feels much more like my local environment</q>
+        <div class="feedback-img-container">
+          <picture>
+            <source srcset="/assets/images/dist/feedback-avatar-3.avif" type="image/avif">
+            <source srcset="/assets/images/dist/feedback-avatar-3.webp" type="image/webp">
+            <img src="/assets/images/dist/feedback-avatar-3.png" alt="">
+          </picture>
+          <picture>
+            <source srcset="/assets/images/dist/stripe.avif" type="image/avif">
+            <source srcset="/assets/images/dist/stripe.webp" type="image/webp">
+            <img src="/assets/images/dist/stripe.png" alt="">
+          </picture>
+        </div>
+        <h4 class="feedback-text">Jonnie Hallman</h4>
+        <p class="feedback-description">Designer Developer, Stripe</p>
+      </div>
+    </div>
+  </section>
+  <section class="eight-container content-container">
+    <h2 class="title-1">Free for personal use.</h2>
+    <h4 class="description">Create static sites, components, or full-stack web apps with a community who've crafted
+      17,581,604 public sandboxes and counting.</h4>
+    <button class="primary-button">
+      Get started, it's free
+    </button>
+    <div class="gallery-section">
+      <picture>
+        <source srcset="/assets/images/dist/img-eight-sec-1.avif" type="image/avif">
+        <source srcset="/assets/images/dist/img-eight-sec-1.avif" type="image/webp">
+        <img class="img-1" src="/assets/images/dist/img-eight-sec-1.png" alt="">
+      </picture>
+      <picture>
+        <source srcset="/assets/images/dist/img-eight-sec-2.avif" type="image/avif">
+        <source srcset="/assets/images/dist/img-eight-sec-2.avif" type="image/webp">
+        <img class="img-2" src="/assets/images/dist/img-eight-sec-2.png" alt="">
+      </picture>
+      <picture>
+        <source srcset="/assets/images/dist/img-eight-sec-3.avif" type="image/avif">
+        <source srcset="/assets/images/dist/img-eight-sec-3.avif" type="image/webp">
+        <img class="img-3" src="/assets/images/dist/img-eight-sec-3.png" alt="">
+      </picture>
+      <picture>
+        <source srcset="/assets/images/dist/img-eight-sec-4.avif" type="image/avif">
+        <source srcset="/assets/images/dist/img-eight-sec-4.avif" type="image/webp">
+        <img class="img-4" src="/assets/images/dist/img-eight-sec-4.png" alt="">
+      </picture>
+    </div>
+  </section>
 </main>
-<footer>footer</footer>
+<footer class="wrapper-container">
+  <div class="footer-nav">
+    <div class="list-wrapper">
+      <h5 class="list-title">Product</h5>
+      <ul class="list-container">
+        <li class="list-item">
+          <a href="#">Coding</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Prototyping</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Knowledge sharing</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Feedback</a>
+        </li>
+        <li class="list-item">
+          <a href="#">What's new</a>
+        </li>
+      </ul>
+    </div>
+    <div class="list-wrapper">
+      <h5 class="list-title">Explore</h5>
+      <ul class="list-container">
+        <li class="list-item">
+          <a href="#">Featured sandboxes</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Search sandboxes</a>
+        </li>
+      </ul>
+    </div>
+    <div class="list-wrapper">
+      <h5 class="list-title">For</h5>
+      <ul class="list-container">
+        <li class="list-item">
+          <a href="#">Individuals</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Teams</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Enterprise</a>
+        </li>
+      </ul>
+    </div>
+    <div class="list-wrapper">
+      <h5 class="list-title">About</h5>
+      <ul class="list-container">
+        <li class="list-item">
+          <a href="#">Pricing</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Company</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Blog</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Prodcasts</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Jobs
+            <span class="notif-item">1</span>
+          </a>
+        </li>
+        <li class="list-item">
+          <a href="#">Terms of use</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Privacy policy</a>
+        </li>
+      </ul>
+    </div>
+    <div class="list-wrapper">
+      <h5 class="list-title">Support</h5>
+      <ul class="list-container">
+        <li class="list-item">
+          <a href="#">Documentation</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Contact support</a>
+        </li>
+        <li class="list-item">
+          <a href="#">Status</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-titles">
+    <div class="footer-socials">
+      <a href="#" class="social-icon"></a>
+      <a href="#" class="social-icon"></a>
+      <a href="#" class="social-icon"></a>
+    </div>
+    <div class="footer-copyright">Copyright © 2022 CodeSandbox BV.</div>
+  </div>
+</footer>
 
 <script src="/minify/js/main.min.js"></script>
 </body>

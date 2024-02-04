@@ -1,4 +1,6 @@
-# `Сборка Gulp 08.07.2023`
+# `Верстка лендинга CodeSandbox`
+
+[Дизайн](https://www.figma.com/file/6BlX9y0AYNsysbpzRtcbYF/CodeSandbox?node-id=0%3A1&t=Wpbt3vcmqtKcEvl4-0)
 
 В сборке есть:
 - TailwindCss (для быстрой работы со стилями)
